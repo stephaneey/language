@@ -71,7 +71,7 @@ namespace Eyskens.CognitiveServices.Linguistics
                 v.tag.Equals(PennTags.vbp) ||
                 v.tag.Equals(PennTags.vbz));
         }
-        public IEnumerable<TokenAndTag> GetAjectives(List<TokenAndTag> input)
+        public IEnumerable<TokenAndTag> GetAdjectives(List<TokenAndTag> input)
         {
             return input.Where(
                 v => v.tag.Equals(PennTags.jj) ||
